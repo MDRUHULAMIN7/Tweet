@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Hero() {
   return (
-    <section className="hero-bg px-4 flex flex-col-reverse lg:flex-row  lg:px-24 py-16">
+    <section className="hero-bg px-4 flex flex-col-reverse lg:flex-row  lg:px-24 py-28">
 
 
 

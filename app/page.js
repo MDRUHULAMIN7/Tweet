@@ -1,3 +1,4 @@
+import Category from "@/components/Category";
 import Hero from "@/components/Hero";
 import Image from "next/image";
 
@@ -6,6 +7,10 @@ export default function Home() {
   <div>
   {/* Hero section */}
   <Hero></Hero>
+
+  {/* category */}
+
+  <Category></Category>
 
 
   </div>
