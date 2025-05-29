@@ -1,6 +1,7 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono,Rancho } from "next/font/google";
 import "./globals.css";
-
+import Navbar from "@/components/Navbar";
+import { Poppins } from "next/font/google";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -9,7 +10,21 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  
 });
+
+const poppins = Poppins({
+  weight: "400", // '400' = regular
+  subsets: ["latin"],
+  variable: "--font-poppins",
+});
+
+
+const rancho = Rancho({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-rancho',
+})
 
 export const metadata = {
   title: "Create Next App",
@@ -20,8 +35,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${rancho.variable} antialiased`}
       >
+        <Navbar></Navbar>
         {children}
       </body>
     </html>
