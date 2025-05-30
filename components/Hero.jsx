@@ -70,7 +70,7 @@ function Hero() {
 
             <div className="relative">
               <Image
-                src="/icon - Plus.png"
+                src="/iconPlus.png"
                 alt="Avatar 3"
                 width={40}
                 height={40}
