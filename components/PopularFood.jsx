@@ -1,3 +1,4 @@
+import Button from "./Button"
 import Heading from "./Heading"
 import PopularCard from "./PopularCard"
 import Slider from "./Slider"
@@ -129,8 +130,7 @@ const PopularFood = () => {
     <div className="bg-[#fdd8cf40] px-auto lg:px-30 py-8">
 
         <div className="flex justify-between">   <Heading t1="Popular Food" t2="Popular" t3="Food Near me" />
-
-        <button className={`h-12 text-lg font-semibold border rounded-lg border-[#ED6923] text-[#ED6923] px-8 py-2 justify-end mt-10`}> View All</button>
+<Button text={'View All'} fill={false}></Button>
         </div>
 
       <Slider foodData={popularFoods} card={'popularFood'}></Slider>
