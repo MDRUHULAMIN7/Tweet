@@ -8,7 +8,6 @@ function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
 
-  // 🔒 Close dropdown if clicked outside
   useEffect(() => {
     function handleClickOutside(event) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -26,7 +25,7 @@ function Navbar() {
     <div className="h-40 bg-white relative">
       {/* Top Banner */}
       <div className="bg-[#ed6923] h-12 flex justify-center items-center">
-        <h1 className="text-xl text-white">
+        <h1 className="sm:text-xl text-white">
           Free Delivery on Your First Order – Order Now!
         </h1>
       </div>
@@ -63,19 +62,20 @@ function Navbar() {
           {/* Dropdown Menu */}
           {isDropdownOpen && (
             <div className="absolute right-0 mt-2 bg-white shadow-md rounded-md py-2 w-36 z-10 ">
-            <div>
+              <div>
                 <Link
-                href="/"
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-              >
-                Home
-              </Link>  <Link
-                href="/profile"
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-              >
-                Profile
-              </Link>
-            </div>
+                  href="/"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Home
+                </Link>{" "}
+                <Link
+                  href="/profile"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Profile
+                </Link>
+              </div>
             </div>
           )}
         </div>
