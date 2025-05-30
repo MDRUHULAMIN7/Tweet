@@ -1,4 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 Tweet – Food Delivery Web App (Frontend)
+
+![Tweet Screenshot](./public/preview.png) <!-- Add a real screenshot if available -->
+
+Tweet is a modern and responsive food delivery web application frontend built with **Next.js 15**, **Tailwind CSS v4**, and optimized for performance, user experience, and mobile responsiveness.
+
+## 🌟 Live Demo
+
+👉 [Visit Live Site](https://tweet-one.vercel.app)
+
+---
+
+## ✨ Key Features
+
+- ✅ Fully responsive design – mobile-first, pixel-perfect layout
+- 🎨 Built with **Tailwind CSS v4** – modern, utility-first design
+- ⚡ Fast and SEO-friendly – using the latest **Next.js 15**
+- 🍔 Dynamic sections:
+  - Hero banner with CTA
+  - Popular food items & discounts
+  - Trending restaurants
+  - Customer testimonials
+  - App promotion section
+
+---
+
+## 🛠️ Tech Stack
+
+| Tech          | Description                        |
+|---------------|------------------------------------|
+| Next.js 15    | React framework for hybrid apps    |
+| Tailwind CSS  | Utility-first CSS for custom UI    |
+| Vercel        | Lightning-fast hosting & CI/CD     |
+
+---
+
+## 💡 What Makes It Stand Out?
+
+- Designed with user-first UX strategy
+- Carefully crafted animations & layout
+- Fully modular codebase with reusable components
+- Clean, readable, and scalable code structure
+- Custom hover states, transitions, and responsive breakpoints
+
+---
+
+## 📁 Folder Structure
+
+
 
 ## Getting Started
 
