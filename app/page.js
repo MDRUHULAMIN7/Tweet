@@ -4,7 +4,7 @@ import PopularFood from "@/components/PopularFood";
 import PopularRestaurent from "@/components/PopularRestaurent";
 import Resturants from "@/components/Resturants";
 import Testimonials from "@/components/Testimonials";
-import Image from "next/image";
+
 
 export default function Home() {
   return (
