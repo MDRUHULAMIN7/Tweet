@@ -126,7 +126,7 @@ const PopularFood = () => {
     },
   ]
   return (
-    <div className="bg-[#fdd8cf40] px-auto lg:px-30 mb-4">
+    <div className="bg-[#fdd8cf40] px-auto lg:px-30 py-8">
 
         <div className="flex justify-between">   <Heading t1="Popular Food" t2="Popular" t3="Food Near me" />
 
