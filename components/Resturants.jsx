@@ -4,7 +4,6 @@ import Heading from "./Heading";
 const Resturants = () => {
   return (
     <div className="relative bg-[#fdd8cf40] w-full py-16 px-4 mx-auto lg:px-32  overflow-hidden">
- 
       <div
         className="absolute bottom-0 w-full lg:w-[85%] h-[300px]  rounded-[20px]"
         style={{

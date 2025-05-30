@@ -1,21 +1,25 @@
 import Image from "next/image"
 import Heading from "./Heading"
+import TestimonialSlider from "./TestimonialSlider"
 
 
 const Testimonials = () => {
   return (
-    <div className="bg-[#fdd8cf40] px-auto lg:px-40 py-8 flex flex-col justify-between lg:flex-row">
+    <div className="bg-[#fdd8cf40] px-auto lg:px-32 py-8 pt-40 flex flex-col justify-between lg:flex-row">
 {/* left section */}
- <div>
+ <div className="pt-4 lg:pt-12">
 
     {/* Heading */}
-          <div className={`text-left space-y-4 `}>
+          <div className={`text-left space-y-5 `}>
         <h4 className="text-2xl font-rancho">Testimonial</h4>
 
-        <h1 className="text-4xl font-bold text-black">What 
+        <h1 className="text-5xl font-bold text-black leading-snug">What 
 <span className="text-[#ED6923]">Customer Saying</span> <br />
-<span  className="text-4xl font-bold text-black">About our Services</span></h1> 
+<span  className="text-5xl font-bold text-black">About our Services</span></h1> 
     </div>
+    {/* testimonial slider */}
+
+    <TestimonialSlider></TestimonialSlider>
  </div>
 
  {/* right section */}
@@ -25,8 +29,8 @@ const Testimonials = () => {
     <Image
     src={'/testimonial.png'}
     alt="photo"
-    height={500}
-    width={500}></Image>
+    height={700}
+    width={700}></Image>
 </div>
 
 
