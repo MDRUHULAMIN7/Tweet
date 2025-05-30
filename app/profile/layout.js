@@ -1,4 +1,10 @@
-import { Geist, Geist_Mono, Rancho, Poppins, Lobster_Two } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Rancho,
+  Poppins,
+  Lobster_Two,
+} from "next/font/google";
 import "../globals.css";
 import Sidebar from "@/components/Sidebar";
 
@@ -45,6 +51,5 @@ export default function ProfileLayout({ children }) {
         <main className="flex-1 overflow-y-hidden">{children}</main>
       </div>
     </div>
-
   );
 }
