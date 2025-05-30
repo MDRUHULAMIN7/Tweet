@@ -23,16 +23,13 @@ function Navbar() {
 
   return (
     <div className="h-40 bg-white relative">
-      {/* Top Banner */}
       <div className="bg-[#ed6923] h-12 flex justify-center items-center">
-        <h1 className="sm:text-xl text-white">
+        <h1 className=" text-sm ml-6 sm:ml-0 sm:text-xl  text-white">
           Free Delivery on Your First Order – Order Now!
         </h1>
       </div>
 
-      {/* Main Navbar */}
-      <div className="flex items-center justify-between px-16 h-28 relative">
-        {/* Logo */}
+      <div className="flex items-center justify-between px-3 md:px-16 h-28 relative">
         <Link href="/">
           <Image
             height={50}
@@ -43,9 +40,7 @@ function Navbar() {
           />
         </Link>
 
-        {/* Profile Section */}
         <div className="relative" ref={dropdownRef}>
-          {/* Profile Image Button */}
           <button
             onClick={() => setIsDropdownOpen((prev) => !prev)}
             className="focus:outline-none"
@@ -59,7 +54,6 @@ function Navbar() {
             />
           </button>
 
-          {/* Dropdown Menu */}
           {isDropdownOpen && (
             <div className="absolute right-0 mt-2 bg-white shadow-md rounded-md py-2 w-36 z-10 ">
               <div>
