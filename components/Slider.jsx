@@ -6,42 +6,44 @@ import 'swiper/css/navigation';
 import { useRef } from 'react';
 import Image from "next/image"
 import CategoryCard from './CategoryCard';
+import PopularCard from './PopularCard';
 
-const Slider = ({arrayData}) => {
+const Slider = ({arrayData,foodData,card}) => {
       const prevRef = useRef(null);
   const nextRef = useRef(null);
   return (
-     <div className="py-16 relative">
+     <div className=" relative py-16">
         
           <button
             ref={prevRef}
-            className="absolute -left-16 cursor-pointer top-[60%] -translate-y-[60%] z-10 text-3xl bg-white rounded-full shadow px-2 py-2"
+            className="absolute w-10 h-10 -left-16 cursor-pointer top-[50%] -translate-y-[50%] z-10 text-3xl bg-white rounded-full shadow px-2 py-2"
           >
             <Image
-                    height={50}
-                    width={60}
-                    className="w-full h-4"
+                    height={80}
+                    width={80}
+                    className="w-full h-full"
                     src={'/arr-left.png'}
                     alt="logo"
                   />
           </button>
           <button
             ref={nextRef}
-            className="absolute -right-8 top-[60%] -translate-y-[60%] z-10 text-3xl bg-white rounded-full shadow px-2 py-2 cursor-pointer"
+            className="absolute w-[34px] h-[34px] -right-8 top-[60%] -translate-y-[60%] z-10 text-3xl bg-white rounded-full shadow px-2 py-2 cursor-pointer"
           >
               <Image
-                    height={50}
+                    height={10}
                     width={10}
-                    className="w-full h-[12px]"
+                    className="w-full h-full"
                     src={'/arr-right.png'}
                     alt="logo"
                   />
           </button>
     
-          <Swiper
+          {  card === 'category' ? <Swiper
             modules={[Navigation]}
             spaceBetween={20}
             slidesPerView={7}
+            className='relative'
             onInit={(swiper) => {
               swiper.params.navigation.prevEl = prevRef.current;
               swiper.params.navigation.nextEl = nextRef.current;
@@ -54,7 +56,24 @@ const Slider = ({arrayData}) => {
                <CategoryCard data={data}></CategoryCard>
               </SwiperSlide>
             ))}
-          </Swiper>
+          </Swiper> : 
+          <Swiper
+            modules={[Navigation]}
+            spaceBetween={20}
+            slidesPerView={4}
+            onInit={(swiper) => {
+              swiper.params.navigation.prevEl = prevRef.current;
+              swiper.params.navigation.nextEl = nextRef.current;
+              swiper.navigation.init();
+              swiper.navigation.update();
+            }}
+          >
+            {foodData?.map((data) => (
+              <SwiperSlide key={data?.id} >
+               <PopularCard food={data}></PopularCard >
+              </SwiperSlide>
+            ))}
+          </Swiper> }
         </div>
   )
 }

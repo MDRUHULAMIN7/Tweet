@@ -102,7 +102,9 @@ const Category = () => {
 
       {/* slider with category food */}
 
-<Slider arrayData={categoryData}></Slider>
+<div className="pt-20 ">
+  <Slider arrayData={categoryData} card={'category'}></Slider>
+</div>
     </div>
   )
 }

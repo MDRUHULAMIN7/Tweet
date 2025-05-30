@@ -1,5 +1,6 @@
 import Category from "@/components/Category";
 import Hero from "@/components/Hero";
+import PopularFood from "@/components/PopularFood";
 import Image from "next/image";
 
 export default function Home() {
@@ -11,6 +12,10 @@ export default function Home() {
   {/* category */}
 
   <Category></Category>
+
+  {/* popular food */}
+
+  <PopularFood></PopularFood>
 
 
   </div>
