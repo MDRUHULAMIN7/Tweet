@@ -1,4 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# 🍽️ Tweet – Food Ecommerce UI for Restaurants
+
+A modern and responsive food eCommerce frontend UI built using **Next.js 15** and **Tailwind CSS v4**, crafted to help restaurants showcase and sell their meals online with style and efficiency.
+
+---
+
+## ✨ Features
+
+- ✅ Clean and fully responsive layout (mobile to desktop)
+- ✅ Elegant restaurant-focused design with a modern feel
+- ✅ Interactive profile dropdown menu
+- ✅ Eye-catching banners and promotional sections
+- ✅ Reusable, well-structured React components
+- ✅ Fast loading with Next.js App Router
+
+---
+
+## 🔧 Problems I Solved
+
+- 🔄 Replaced basic hover dropdown with **click-to-open & click-outside-to-close** logic for better UX
+- ⚖️ Fixed input width and layout responsiveness to prevent **placeholder text clipping**
+- 🎯 Ensured **text clarity** and balance between visual and functional design
+- 🧱 Built the structure in a **component-first, scalable way**, making future backend/API integration easy
+- 🧑‍💻 Improved accessibility and user flow for **profile navigation** and **password management UI**
+
+---
+
+🧪 **Tech Used:**  
+`Next.js 15`, `Tailwind CSS v4`, `React`, `Vercel`
+
+🔗 **Live Site:**  
+[https://tweet-one.vercel.app](https://tweet-one.vercel.app)
+
+---
+
 
 ## Getting Started
 
