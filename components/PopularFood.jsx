@@ -1,6 +1,6 @@
 import Button from "./Button"
 import Heading from "./Heading"
-import PopularCard from "./PopularCard"
+
 import Slider from "./Slider"
 
 const PopularFood = () => {
