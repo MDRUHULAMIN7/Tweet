@@ -3,6 +3,7 @@ import "./globals.css";
 import { Lobster_Two } from 'next/font/google';
 import Navbar from "@/components/Navbar";
 import { Poppins } from "next/font/google";
+import Footer from "@/components/Footer";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -45,6 +46,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar></Navbar>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );
