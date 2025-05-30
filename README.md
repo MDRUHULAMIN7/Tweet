@@ -1,51 +1,38 @@
-# 🚀 Tweet – Food Delivery Web App (Frontend)
 
-![Tweet Screenshot](./public/preview.png) <!-- Add a real screenshot if available -->
+# 🍽️ Tweet – Food Ecommerce UI for Restaurants
 
-Tweet is a modern and responsive food delivery web application frontend built with **Next.js 15**, **Tailwind CSS v4**, and optimized for performance, user experience, and mobile responsiveness.
-
-## 🌟 Live Demo
-
-👉 [Visit Live Site](https://tweet-one.vercel.app)
+A modern and responsive food eCommerce frontend UI built using **Next.js 15** and **Tailwind CSS v4**, crafted to help restaurants showcase and sell their meals online with style and efficiency.
 
 ---
 
-## ✨ Key Features
+## ✨ Features
 
-- ✅ Fully responsive design – mobile-first, pixel-perfect layout
-- 🎨 Built with **Tailwind CSS v4** – modern, utility-first design
-- ⚡ Fast and SEO-friendly – using the latest **Next.js 15**
-- 🍔 Dynamic sections:
-  - Hero banner with CTA
-  - Popular food items & discounts
-  - Trending restaurants
-  - Customer testimonials
-  - App promotion section
+- ✅ Clean and fully responsive layout (mobile to desktop)
+- ✅ Elegant restaurant-focused design with a modern feel
+- ✅ Interactive profile dropdown menu
+- ✅ Eye-catching banners and promotional sections
+- ✅ Reusable, well-structured React components
+- ✅ Fast loading with Next.js App Router
 
 ---
 
-## 🛠️ Tech Stack
+## 🔧 Problems I Solved
 
-| Tech          | Description                        |
-|---------------|------------------------------------|
-| Next.js 15    | React framework for hybrid apps    |
-| Tailwind CSS  | Utility-first CSS for custom UI    |
-| Vercel        | Lightning-fast hosting & CI/CD     |
-
----
-
-## 💡 What Makes It Stand Out?
-
-- Designed with user-first UX strategy
-- Carefully crafted animations & layout
-- Fully modular codebase with reusable components
-- Clean, readable, and scalable code structure
-- Custom hover states, transitions, and responsive breakpoints
+- 🔄 Replaced basic hover dropdown with **click-to-open & click-outside-to-close** logic for better UX
+- ⚖️ Fixed input width and layout responsiveness to prevent **placeholder text clipping**
+- 🎯 Ensured **text clarity** and balance between visual and functional design
+- 🧱 Built the structure in a **component-first, scalable way**, making future backend/API integration easy
+- 🧑‍💻 Improved accessibility and user flow for **profile navigation** and **password management UI**
 
 ---
 
-## 📁 Folder Structure
+🧪 **Tech Used:**  
+`Next.js 15`, `Tailwind CSS v4`, `React`, `Vercel`
 
+🔗 **Live Site:**  
+[https://tweet-one.vercel.app](https://tweet-one.vercel.app)
+
+---
 
 
 ## Getting Started
