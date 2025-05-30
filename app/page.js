@@ -2,6 +2,8 @@ import Category from "@/components/Category";
 import Hero from "@/components/Hero";
 import PopularFood from "@/components/PopularFood";
 import PopularRestaurent from "@/components/PopularRestaurent";
+import Resturants from "@/components/Resturants";
+import Testimonials from "@/components/Testimonials";
 import Image from "next/image";
 
 export default function Home() {
@@ -20,6 +22,13 @@ export default function Home() {
 
   {/* popular resturent */}
   <PopularRestaurent></PopularRestaurent>
+
+  {/* Resturants */}
+
+  <Resturants></Resturants>
+
+  {/* testimonials */}
+  <Testimonials></Testimonials>
 
   </div>
   );
