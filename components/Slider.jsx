@@ -18,7 +18,7 @@ const Slider = ({ arrayData, foodData, restData, card }) => {
       <div className="relative py-16">
         <button
           ref={prevRef}
-          className="absolute w-10 h-10 -left-16 cursor-pointer top-[50%] -translate-y-[50%] z-10 text-3xl bg-white rounded-full shadow px-2 py-2"
+          className="absolute w-10 h-10 left-2 lg:-left-16 cursor-pointer top-[50%] -translate-y-[50%] z-10 text-3xl bg-white rounded-full shadow px-2 py-2"
         >
           <Image
             height={80}
@@ -31,7 +31,7 @@ const Slider = ({ arrayData, foodData, restData, card }) => {
 
         <button
           ref={nextRef}
-          className="absolute w-[34px] h-[34px] -right-8 top-[50%] -translate-y-[50%] z-10 text-3xl bg-white rounded-full shadow px-2 py-2 cursor-pointer"
+          className="absolute w-[34px] h-[34px] right-2 lg:-right-8 top-[50%] -translate-y-[50%] z-10 text-3xl bg-white rounded-full shadow px-2 py-2 cursor-pointer"
         >
           <Image
             height={10}
@@ -45,7 +45,20 @@ const Slider = ({ arrayData, foodData, restData, card }) => {
         <Swiper
           modules={[Navigation]}
           spaceBetween={20}
-          slidesPerView={4}
+                 breakpoints={{
+    0: {
+      slidesPerView: 1,
+    },
+    740: {
+      slidesPerView: 2,
+    },
+    1180: {
+      slidesPerView: 3,
+    },
+    1380: {
+      slidesPerView: 4,
+    },
+  }}
           onInit={(swiper) => {
             swiper.params.navigation.prevEl = prevRef.current;
             swiper.params.navigation.nextEl = nextRef.current;
@@ -66,7 +79,7 @@ const Slider = ({ arrayData, foodData, restData, card }) => {
       <div className="relative py-16">
         <button
           ref={prevRef}
-          className="absolute w-10 h-10 -left-16 cursor-pointer top-[62%] -translate-y-[62%] z-10 text-3xl bg-white rounded-full shadow px-2 py-2"
+          className="absolute cursor-pointer w-10 h-10 left-2 lg:-left-16  top-[62%] -translate-y-[62%] z-10 text-3xl bg-white rounded-full shadow px-2 py-2"
         >
           <Image
             height={80}
@@ -79,7 +92,7 @@ const Slider = ({ arrayData, foodData, restData, card }) => {
 
         <button
           ref={nextRef}
-          className="absolute w-[34px] h-[34px] -right-8 top-[62%] -translate-y-[62%] z-10 text-3xl bg-white rounded-full shadow px-2 py-2 cursor-pointer"
+          className="absolute w-[34px] h-[34px] right-2 lg:-right-8 top-[62%] -translate-y-[62%] z-10 text-3xl bg-white rounded-full shadow px-2 py-2 cursor-pointer"
         >
           <Image
             height={10}
@@ -93,7 +106,26 @@ const Slider = ({ arrayData, foodData, restData, card }) => {
         <Swiper
           modules={[Navigation]}
           spaceBetween={20}
-          slidesPerView={7}
+                   breakpoints={{
+    0: {
+      slidesPerView: 1,
+    },
+    540: {
+      slidesPerView: 3,
+    },
+    824: {
+      slidesPerView: 4,
+    },
+    1080: {
+      slidesPerView: 5,
+    },
+    1180: {
+      slidesPerView: 6,
+    },
+    1380: {
+      slidesPerView: 7,
+    },
+  }}
           onInit={(swiper) => {
             swiper.params.navigation.prevEl = prevRef.current;
             swiper.params.navigation.nextEl = nextRef.current;
@@ -115,7 +147,7 @@ const Slider = ({ arrayData, foodData, restData, card }) => {
       <div className="relative py-16">
         <button
           ref={prevRef}
-          className="absolute w-10 h-10 -left-16 cursor-pointer top-[50%] -translate-y-[50%] z-10 text-3xl bg-white rounded-full shadow px-2 py-2"
+          className="absolute w-10 h-10 left-2 lg:-left-16 cursor-pointer top-[50%] -translate-y-[50%] z-10 text-3xl bg-white rounded-full shadow px-2 py-2"
         >
           <Image
             height={80}
@@ -128,7 +160,7 @@ const Slider = ({ arrayData, foodData, restData, card }) => {
 
         <button
           ref={nextRef}
-          className="absolute w-[34px] h-[34px] -right-8 top-[50%] -translate-y-[50%] z-10 text-3xl bg-white rounded-full shadow px-2 py-2 cursor-pointer"
+          className="absolute w-[34px] h-[34px] right-2 lg:-right-8 top-[50%] -translate-y-[50%] z-10 text-3xl bg-white rounded-full shadow px-2 py-2 cursor-pointer"
         >
           <Image
             height={10}
@@ -142,7 +174,20 @@ const Slider = ({ arrayData, foodData, restData, card }) => {
         <Swiper
           modules={[Navigation]}
           spaceBetween={20}
-          slidesPerView={4}
+          breakpoints={{
+    0: {
+      slidesPerView: 1,
+    },
+    740: {
+      slidesPerView: 2,
+    },
+    1180: {
+      slidesPerView: 3,
+    },
+    1380: {
+      slidesPerView: 4,
+    },
+  }}
           onInit={(swiper) => {
             swiper.params.navigation.prevEl = prevRef.current;
             swiper.params.navigation.nextEl = nextRef.current;

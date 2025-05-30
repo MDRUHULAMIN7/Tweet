@@ -13,7 +13,7 @@ const RestaurentCard = ({ food }) => {
   return (
     <div
       key={food.id}
-      className="bg-white rounded-2xl shadow-md  pb-2 w-72 relative"
+      className="bg-white rounded-2xl shadow-md mx-auto pb-2 w-72 relative"
     >
       <span className="absolute top-3 left-0 bg-orange-500 text-white text-sm rounded-r-2xl font-bold pr-3 py-1 rounded">
         <span className="flex items-center gap-1">

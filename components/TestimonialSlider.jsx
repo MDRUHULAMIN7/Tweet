@@ -63,7 +63,7 @@ export default function TestimonialSlider() {
           spaceBetween={20}
           slidesPerView={1}
           loop={true}
-          className="w-[485px] custom-swiper"
+          className=" w-[340px] md:w-[485px] custom-swiper"
         >
           {testimonials.map((item) => (
             <SwiperSlide key={item.id}>
